@@ -21,8 +21,8 @@ Tutorial video: https://www.syncfusion.com/tutorial-videos
 
 ## Project pre-requisites
 
-Make sure that you have the compatible versions of Visual Studio 2022 and .NET 8.0 SDK framework in your machine before starting to work on this project.
+Make sure that you have the compatible versions of Visual Studio 2022 and the .NET 8.0 SDK framework in your machine before starting to work on this project.
 
 ### How to run this application?
 
-To run this application, you need to clone the `getting-started-with-the-aspdotnet-core-financial-charts-control/invitations` repository and then press the `F5` key to run the application.
+To run this application, you need to clone the `getting-started-with-the-aspdotnet-core-financial-charts-control` repository and then press the `F5` key to run the application.
