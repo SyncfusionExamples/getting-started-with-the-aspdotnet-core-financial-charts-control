@@ -1,0 +1,426 @@
+﻿@page
+@model IndexModel
+@{
+    List<ChartData> Data = new List<ChartData>()
+    {
+        new ChartData {
+            Period= new DateTime(2012, 04, 02),
+            OpenValue= 85.9757,
+            HighValue= 90.6657,
+            LowValue= 85.7685,
+            CloseValue= 90.5257
+        },
+        new ChartData {
+            Period= new DateTime(2012, 04, 09),
+            OpenValue= 89.4471,
+            HighValue= 92,
+            LowValue= 86.2157,
+            CloseValue= 86.4614
+        },
+        new ChartData {
+            Period= new DateTime(2012, 04, 16),
+            OpenValue= 87.1514,
+            HighValue= 88.6071,
+            LowValue= 81.4885,
+            CloseValue= 81.8543
+        },
+        new ChartData {
+            Period= new DateTime(2012, 04, 23),
+            OpenValue= 81.5157,
+            HighValue= 88.2857,
+            LowValue= 79.2857,
+            CloseValue= 86.1428
+        },
+        new ChartData {
+            Period= new DateTime(2012, 04, 30),
+            OpenValue= 85.4,
+            HighValue= 85.4857,
+            LowValue= 80.7385,
+            CloseValue= 80.75
+        },
+        new ChartData {
+            Period= new DateTime(2012, 05, 07),
+            OpenValue= 80.2143,
+            HighValue= 82.2685,
+            LowValue= 79.8185,
+            CloseValue= 80.9585
+        },
+        new ChartData {
+            Period= new DateTime(2012, 05, 14),
+            OpenValue= 80.3671,
+            HighValue= 81.0728,
+            LowValue= 74.5971,
+            CloseValue= 75.7685
+        },
+        new ChartData {
+            Period= new DateTime(2012, 05, 21),
+            OpenValue= 76.3571,
+            HighValue= 82.3571,
+            LowValue= 76.2928,
+            CloseValue= 80.3271
+        },
+        new ChartData {
+            Period= new DateTime(2012, 05, 28),
+            OpenValue= 81.5571,
+            HighValue= 83.0714,
+            LowValue= 80.0743,
+            CloseValue= 80.1414
+        },
+        new ChartData {
+            Period= new DateTime(2012, 06, 04),
+            OpenValue= 80.2143,
+            HighValue= 82.9405,
+            LowValue= 78.3571,
+            CloseValue= 82.9028
+        },
+        new ChartData {
+            Period= new DateTime(2012, 06, 11),
+            OpenValue= 83.96,
+            HighValue= 84.0714,
+            LowValue= 80.9571,
+            CloseValue= 82.0185
+        },
+        new ChartData {
+            Period= new DateTime(2012, 06, 18),
+            OpenValue= 81.5657,
+            HighValue= 84.2857,
+            LowValue= 81.4814,
+            CloseValue= 83.1571
+        },
+        new ChartData {
+            Period= new DateTime(2012, 06, 25),
+            OpenValue= 82.4714,
+            HighValue= 83.4285,
+            LowValue= 80.8014,
+            CloseValue= 83.4285
+        },
+        new ChartData {
+            Period= new DateTime(2012, 07, 02),
+            OpenValue= 83.5328,
+            HighValue= 87.7628,
+            LowValue= 83.3714,
+            CloseValue= 86.5543
+        },
+        new ChartData {
+            Period= new DateTime(2012, 07, 09),
+            OpenValue= 86.4714,
+            HighValue= 88.5528,
+            LowValue= 84.6685,
+            CloseValue= 86.4243
+        },
+        new ChartData {
+            Period= new DateTime(2012, 07, 16),
+            OpenValue= 86.4457,
+            HighValue= 87.9071,
+            LowValue= 86.1643,
+            CloseValue= 86.3285
+        },
+        new ChartData {
+            Period= new DateTime(2012, 07, 23),
+            OpenValue= 84.9143,
+            HighValue= 87.0971,
+            LowValue= 81.4285,
+            CloseValue= 83.5943
+        },
+        new ChartData {
+            Period= new DateTime(2012, 07, 30),
+            OpenValue= 84.4171,
+            HighValue= 88.2828,
+            LowValue= 83.9743,
+            CloseValue= 87.9571
+        },
+        new ChartData {
+            Period= new DateTime(2012, 08, 06),
+            OpenValue= 88.1843,
+            HighValue= 89.2857,
+            LowValue= 87.8943,
+            CloseValue= 88.8143
+        },
+        new ChartData {
+            Period= new DateTime(2012, 08, 13),
+            OpenValue= 89.0557,
+            HighValue= 92.5985,
+            LowValue= 89.0357,
+            CloseValue= 92.5871
+        },
+        new ChartData {
+            Period= new DateTime(2012, 08, 20),
+            OpenValue= 92.8585,
+            HighValue= 96.4114,
+            LowValue= 92.5871,
+            CloseValue= 94.746
+        },
+        new ChartData {
+            Period= new DateTime(2012, 08, 27),
+            OpenValue= 97.1414,
+            HighValue= 97.2671,
+            LowValue= 93.8928,
+            CloseValue= 95.0343
+        },
+        new ChartData {
+            Period= new DateTime(2012, 09, 03),
+            OpenValue= 95.1085,
+            HighValue= 97.4971,
+            LowValue= 94.9285,
+            CloseValue= 97.2057
+        },
+        new ChartData {
+            Period= new DateTime(2012, 09, 10),
+            OpenValue= 97.2071,
+            HighValue= 99.5685,
+            LowValue= 93.7143,
+            CloseValue= 98.7543
+        },
+        new ChartData {
+            Period= new DateTime(2012, 09, 17),
+            OpenValue= 99.9071,
+            HighValue= 100.7243,
+            LowValue= 99.0885,
+            CloseValue= 100.0135
+        },
+        new ChartData {
+            Period= new DateTime(2012, 09, 24),
+            OpenValue= 98.1228,
+            HighValue= 99.3028,
+            LowValue= 94.3357,
+            CloseValue= 95.3007
+        },
+        new ChartData {
+            Period= new DateTime(2012, 10, 01),
+            OpenValue= 95.88,
+            HighValue= 96.6785,
+            LowValue= 92.95,
+            CloseValue= 93.2271
+        },
+        new ChartData {
+            Period= new DateTime(2012, 10, 08),
+            OpenValue= 92.4114,
+            HighValue= 92.5085,
+            LowValue= 89.0785,
+            CloseValue= 89.9591
+        },
+        new ChartData {
+            Period= new DateTime(2012, 10, 15),
+            OpenValue= 90.3357,
+            HighValue= 93.2557,
+            LowValue= 87.0885,
+            CloseValue= 87.12
+        },
+        new ChartData {
+            Period= new DateTime(2012, 10, 22),
+            OpenValue= 87.4885,
+            HighValue= 90.7685,
+            LowValue= 84.4285,
+            CloseValue= 86.2857
+        },
+        new ChartData {
+            Period= new DateTime(2012, 10, 29),
+            OpenValue= 84.9828,
+            HighValue= 86.1428,
+            LowValue= 82.1071,
+            CloseValue= 82.4
+        },
+        new ChartData {
+            Period= new DateTime(2012, 11, 05),
+            OpenValue= 83.3593,
+            HighValue= 84.3914,
+            LowValue= 76.2457,
+            CloseValue= 78.1514
+        },
+        new ChartData {
+            Period= new DateTime(2012, 11, 12),
+            OpenValue= 79.1643,
+            HighValue= 79.2143,
+            LowValue= 72.25,
+            CloseValue= 75.3825
+        },
+        new ChartData {
+            Period= new DateTime(2012, 11, 19),
+            OpenValue= 77.2443,
+            HighValue= 81.7143,
+            LowValue= 77.1257,
+            CloseValue= 81.6428
+        },
+        new ChartData {
+            Period= new DateTime(2012, 11, 26),
+            OpenValue= 82.2714,
+            HighValue= 84.8928,
+            LowValue= 81.7514,
+            CloseValue= 83.6114
+        },
+        new ChartData {
+            Period= new DateTime(2012, 12, 03),
+            OpenValue= 84.8071,
+            HighValue= 84.9414,
+            LowValue= 74.09,
+            CloseValue= 76.1785
+        },
+        new ChartData {
+            Period= new DateTime(2012, 12, 10),
+            OpenValue= 75,
+            HighValue= 78.5085,
+            LowValue= 72.2257,
+            CloseValue= 72.8277
+        },
+        new ChartData {
+            Period= new DateTime(2012, 12, 17),
+            OpenValue= 72.7043,
+            HighValue= 76.4143,
+            LowValue= 71.6043,
+            CloseValue= 74.19
+        },
+        new ChartData {
+            Period= new DateTime(2012, 12, 24),
+            OpenValue= 74.3357,
+            HighValue= 74.8928,
+            LowValue= 72.0943,
+            CloseValue= 72.7984
+        },
+        new ChartData {
+            Period= new DateTime(2012, 12, 31),
+            OpenValue= 72.9328,
+            HighValue= 79.2857,
+            LowValue= 72.7143,
+            CloseValue= 75.2857
+        },
+        new ChartData {
+            Period= new DateTime(2013, 01, 07),
+            OpenValue= 74.5714,
+            HighValue= 75.9843,
+            LowValue= 73.6,
+            CloseValue= 74.3285
+        },
+        new ChartData {
+            Period= new DateTime(2013, 01, 14),
+            OpenValue= 71.8114,
+            HighValue= 72.9643,
+            LowValue= 69.0543,
+            CloseValue= 71.4285
+        },
+        new ChartData {
+            Period= new DateTime(2013, 01, 21),
+            OpenValue= 72.08,
+            HighValue= 73.57,
+            LowValue= 62.1428,
+            CloseValue= 62.84
+        },
+        new ChartData {
+            Period= new DateTime(2013, 01, 28),
+            OpenValue= 62.5464,
+            HighValue= 66.0857,
+            LowValue= 62.2657,
+            CloseValue= 64.8028
+        },
+        new ChartData {
+            Period= new DateTime(2013, 02, 04),
+            OpenValue= 64.8443,
+            HighValue= 68.4014,
+            LowValue= 63.1428,
+            CloseValue= 67.8543
+        },
+        new ChartData {
+            Period= new DateTime(2013, 02, 11),
+            OpenValue= 68.0714,
+            HighValue= 69.2771,
+            LowValue= 65.7028,
+            CloseValue= 65.7371
+        },
+        new ChartData {
+            Period= new DateTime(2013, 02, 18),
+            OpenValue= 65.8714,
+            HighValue= 66.1043,
+            LowValue= 63.26,
+            CloseValue= 64.4014
+        },
+        new ChartData {
+            Period= new DateTime(2013, 02, 25),
+            OpenValue= 64.8357,
+            HighValue= 65.0171,
+            LowValue= 61.4257,
+            CloseValue= 61.4957
+        },
+        new ChartData {
+            Period= new DateTime(2013, 03, 04),
+            OpenValue= 61.1143,
+            HighValue= 62.2043,
+            LowValue= 59.8571,
+            CloseValue= 61.6743
+        },
+        new ChartData {
+            Period= new DateTime(2013, 03, 11),
+            OpenValue= 61.3928,
+            HighValue= 63.4614,
+            LowValue= 60.7343,
+            CloseValue= 63.38
+        },
+        new ChartData {
+            Period= new DateTime(2013, 03, 18),
+            OpenValue= 63.0643,
+            HighValue= 66.0143,
+            LowValue= 63.0286,
+            CloseValue= 65.9871
+        },
+        new ChartData {
+            Period= new DateTime(2013, 03, 25),
+            OpenValue= 66.3843,
+            HighValue= 67.1357,
+            LowValue= 63.0886,
+            CloseValue= 63.2371
+        },
+        new ChartData {
+            Period= new DateTime(2013, 04, 01),
+            OpenValue= 63.1286,
+            HighValue= 63.3854,
+            LowValue= 59.9543,
+            CloseValue= 60.4571
+        },
+        new ChartData {
+            Period= new DateTime(2013, 04, 08),
+            OpenValue= 60.6928,
+            HighValue= 62.57,
+            LowValue= 60.3557,
+            CloseValue= 61.4
+        },
+        new ChartData {
+            Period= new DateTime(2013, 04, 15),
+            OpenValue= 61,
+            HighValue= 61.1271,
+            LowValue= 55.0143,
+            CloseValue= 55.79
+        },
+        new ChartData {
+            Period= new DateTime(2013, 04, 22),
+            OpenValue= 56.0914,
+            HighValue= 59.8241,
+            LowValue= 55.8964,
+            CloseValue= 59.6007
+        },
+        new ChartData {
+            Period= new DateTime(2013, 04, 29),
+            OpenValue= 60.0643,
+            HighValue= 64.7471,
+            LowValue= 60,
+            CloseValue= 64.2828
+        }
+    };
+}
+
+<ejs-chart id="chart" title="AAPL Historical">
+   <e-chart-primaryxaxis valueType=DateTime title="Period">
+       <e-crosshairtooltip enable=true></e-crosshairtooltip>
+   </e-chart-primaryxaxis>
+   <e-chart-tooltipsettings enable=true></e-chart-tooltipsettings>
+   <e-chart-primaryyaxis title="Price"></e-chart-primaryyaxis>
+   <e-chart-crosshairsettings enable=true
+                              lineType=Vertical></e-chart-crosshairsettings>
+   <e-series-collection>
+       <e-series type="Candle"
+                 dataSource="Data"
+                 xName="Period"
+                 high="HighValue"
+                 low="LowValue"
+                 open="OpenValue"
+                 close="CloseValue"></e-series>
+   </e-series-collection>
+</ejs-chart>
+
